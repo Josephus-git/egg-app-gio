@@ -2,6 +2,7 @@ package main
 
 import (
 	"log"
+	"os"
 	"time"
 
 	"gioui.org/app"
@@ -29,6 +30,8 @@ func main() {
 		if err := draw(w); err != nil {
 			log.Fatal(err)
 		}
+
+		os.Exit(0)
 
 	}()
 	app.Main()
